@@ -33,6 +33,7 @@ document.addEventListener('DOMContentLoaded', function(){
         color[2].classList.remove('addColor');
         //clear message
         message.innerHTML = '';
+
       }
     };
     button.addEventListener('click', function(){
