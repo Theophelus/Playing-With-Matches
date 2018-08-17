@@ -6,24 +6,25 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="randomNumber.js">
+
+    </script>
 
 </head>
-<body onload="randomNumber()">
-
-    <div class="color-match">
-        
+<body>
+    <div class="text">
+        <h4>REFRESH THE BROWSER TO GET RANDOM NUMBERS:</h4>
     </div>
-    
+    <div class="color match ">
+        3
+    </div>
+
+    <div class="color match2">
+        5
+    </div>
+    <div class="color match3">
+        7
+    </div>
+
 </body>
-<script type="text/javascript">
-let colorMatch = document.querySelector('.color-match');
-    let randomNumber = function(min, max){
-        return Math.floor(Math.random() * (max - min)) + min;
-    };
-    //
-    colorMatch.innerHTML = randomNumber(0,9) + ' ' + 'Refresh to get the next number';
-
-</script>
-
-
 </html>
