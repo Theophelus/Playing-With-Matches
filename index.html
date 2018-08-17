@@ -11,8 +11,23 @@
 <body>
 
     <div class="color-match">
-        7
+        
     </div>
     
 </body>
+<script type="text/javascript">
+let colorMatch = document.querySelector('.color-match');
+
+    let randomNumber = function(numbers){
+       
+            return Math.floor(Math.random() * Math.floor(max));
+        }
+    }
+
+    window.addEventListener('load', function(){
+        colorMatch.innerHTML = randomNumber();
+    });
+</script>
+
+
 </html>
