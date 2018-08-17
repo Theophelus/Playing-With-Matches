@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
 
 </head>
-<body>
+<body onload="randomNumber()">
 
     <div class="color-match">
         
@@ -17,16 +17,12 @@
 </body>
 <script type="text/javascript">
 let colorMatch = document.querySelector('.color-match');
+    let randomNumber = function(min, max){
+        return Math.floor(Math.random() * (max - min)) + min;
+    };
+    //
+    colorMatch.innerHTML = randomNumber(0,9) + ' ' + 'Refresh to get the next number';
 
-    let randomNumber = function(numbers){
-       
-            return Math.floor(Math.random() * Math.floor(max));
-        }
-    }
-
-    window.addEventListener('load', function(){
-        colorMatch.innerHTML = randomNumber();
-    });
 </script>
 
 
